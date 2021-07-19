@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#global {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 150vh;
+}
+
+#main_menu,
+#main_content,
+#main_Trend {
+  border: #2e3336 1px solid;
+}
+
+#main_menu {
+  flex: 1.2 0 0;
+  font-size: larger;
+}
+
+.icon {
+  padding: 1rem;
+  padding-left: 3rem;
+  margin: 1rem;
+  color: white;
+  display: flex;
+}
+
+.icon :hover {
+  color:rgb(29, 161, 242);
+}
+
+span {
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  margin-left: 1rem;
+}
+
+svg {
+  display: block;
+  fill: rgba(29, 161, 242, 1);
+}
+
+/* ! 트윗 작성 구간 */
+
+#main_content {
+  flex: 2.5 0 0;
+}
+
+#main_home {
+  font-weight: bold;
+  font-size: larger;
+  padding: 1rem;
+  border-bottom: 2px solid #2e3336;
+  display: flex;    
+}
+
+#main_home_link{
+  flex: 1 0 0;
+}
+
+.blank {
+  background-color: #16181c;
+  padding: 7px;
+}
+
+
+#refresh_box {
+  padding: 7px;
+  display: flex;
+}
+
+#refresh_btn {
+  margin-left: 2.0rem;
+  color: white;
+  background-color: rgb(29, 161, 242);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#write_tweet_master {
+  display: flex;
+}
+
+.userName {
+  flex: 1 0 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+
+.userPhoto_box {
+  border: rgb(29, 161, 242) 1px solid;
+  border-radius: 50%;
+  height: 4rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.userPhoto {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+
+.write_tweet {
+  flex: 9 0 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+
+#write_userName_area {
+  background-color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  color: white;
+  font-size: 14px;
+  margin-top: 1rem;
+  width: 5rem;
+  padding-left: 0.3rem;
+}
+
+#write_tweet_area {
+  background-color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 1rem;
+  font-size: 20px;
+  color: white;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tweetProp_div {
+  display: flex;
+}
+
+.tweetProp_a {
+  margin-right: 0.5rem;
+}
+
+.tweetBtn_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet_Btn {
+  width: 100px;
+  border-radius: 9999px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(29, 161, 242);
+  color: white;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.tweetBtn_div button:active {
+  background-color: #2e3336;
+  transform: scale(0.95);
+}
+
+#refresh_box button:active {
+  background-color: #2e3336;
+  transform: scale(0.95);
+}
+
+#comment {
+  display: flex;
+}
+
+.show_date {
+  font-size: 0.75em;
+  justify-content: flex-end;
+}
+
+.show_userName {
+  font-size: 1em;
+  font-weight: bold;
+  flex: 1 0 0;
+}
+
+.comment_list {
+  display: flex;
+}
+
+.comment_and_showTweet {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+  border: gray solid 1px;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  padding: 0.2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 0.5em;
+}
+
+/* ! Trend 표시 구간 */
+
+#main_Trend {
+  flex: 1.5 0 0;
+  box-sizing: inherit;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+#search_trend_box{
+  background-color: rgb(47, 51, 54);
+  border: #2e3336 1px solid;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  width: 95%;
+  padding: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.blank_trendBox {
+  padding: 7px;
+}
+
+#trendBox {
+  background-color: rgb(21, 24, 28);
+  border: #2e3336 1px solid;
+  border-radius: 20px;
+  height: 80vh;  
+  min-height: 410px;
+  width: 95%;
+}
+
+.trend_list_title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.trend_main_descrp{
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+}
+
+.trend_list {
+  list-style: none;
+  border: #2e3336 solid 1px;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.trend_main_text, .trend_tweet_qty{
+  color: rgb(110, 118, 125);
+  padding-bottom: 0.2rem;
+  
+}
